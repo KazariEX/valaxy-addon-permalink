@@ -1,0 +1,16 @@
+{
+  "name": "valaxy-addon-permalink",
+  "version": "0.0.1",
+  "description": "Customizable post links for Valaxy",
+  "repository": "KazariEX/valaxy-addon-permalink",
+  "keywords": [
+    "valaxy",
+    "addon",
+    "permalink"
+  ],
+  "main": "index.ts",
+  "types": "index.d.ts",
+  "peerDependencies": {
+    "valaxy": "latest"
+  }
+}

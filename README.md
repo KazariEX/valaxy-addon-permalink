@@ -43,12 +43,4 @@ Default: ``/:abbrlink``
 
 - ``year``, ``month``, ``day``：文章发布日期
 
-当 ``abbrlink`` 以 ``/`` 开头时，它将忽略 ``format`` 参数，直接应用到最终链接（仍以 ``prefix`` 开头）。
-
-### ``prefix``
-
-Type: ``string | boolean``
-
-Default: ``/posts``
-
-可配置文章链接的统一前缀，填 ``false`` 时等同于空字符串，即无前缀。
+当 ``abbrlink`` 以 ``/`` 开头时，它将忽略 ``format`` 参数，直接应用到最终链接（仍以 ``/posts`` 开头）。

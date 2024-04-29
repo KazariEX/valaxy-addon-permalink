@@ -7,17 +7,16 @@ export const addonPermalink = defineValaxyAddon<PermalinkOptions>(options => ({
   enable: true,
   options,
   setup(node) {
-    const defaultPrefix = '/posts'
+    const prefix = '/posts'
     const {
       format = '/:abbrlink',
-      prefix = defaultPrefix,
     } = options ?? {}
 
     node.hook('vue-router:extendRoute', (route) => {
-      if (!route.fullPath.startsWith(`${defaultPrefix}/`))
+      if (!route.fullPath.startsWith(`${prefix}/`))
         return
 
-      const name = route.fullPath.slice(defaultPrefix.length + 1)
+      const name = route.fullPath.slice(prefix.length + 1)
 
       const {
         title,
@@ -44,10 +43,7 @@ export const addonPermalink = defineValaxyAddon<PermalinkOptions>(options => ({
         day,
       })
 
-      if (typeof prefix === 'string')
-        route.path = `${prefix}${formattedLink}`
-      else
-        route.path = `${prefix ? defaultPrefix : ''}${formattedLink}`
+      route.path = prefix + formattedLink
     })
   },
 }))

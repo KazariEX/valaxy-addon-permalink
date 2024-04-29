@@ -6,5 +6,4 @@ declare module 'valaxy' {
 
 export interface PermalinkOptions {
   format?: string
-  prefix?: string | boolean
 }

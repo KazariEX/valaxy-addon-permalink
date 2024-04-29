@@ -23,13 +23,13 @@ export default defineValaxyConfig({
 })
 ```
 
-## 配置
+## 选项
 
 ### ``format``
 
-type: ``string``
+Type: ``string``
 
-default: ``/:abbrlink``
+Default: ``/:abbrlink``
 
 形如 ``/:year/:month/:day/:title`` 的字符串，需要以 ``/`` 开头。
 
@@ -47,8 +47,8 @@ default: ``/:abbrlink``
 
 ### ``prefix``
 
-type: ``string | boolean``
+Type: ``string | boolean``
 
-default: ``/posts``
+Default: ``/posts``
 
 可配置文章链接的统一前缀，填 ``false`` 时等同于空字符串，即无前缀。

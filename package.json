@@ -2,6 +2,7 @@
   "name": "valaxy-addon-permalink",
   "version": "0.0.1",
   "description": "Customizable post links for Valaxy",
+  "license": "MIT",
   "repository": "KazariEX/valaxy-addon-permalink",
   "keywords": [
     "valaxy",
